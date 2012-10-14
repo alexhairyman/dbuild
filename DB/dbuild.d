@@ -209,7 +209,7 @@ public:
     string stemp;
     if (PackExists(packagename))
     {
-      stemp ~= compiler_ ~ " " ~ this.GenFileList(packagename) ~ " " ~ this.GenArgList(packagename);
+      stemp ~= compiler_ ~ " " ~ this.GenFileList(packagename) ~ this.GenArgList(packagename);
     }
     return stemp;
   }
